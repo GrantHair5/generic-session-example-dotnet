@@ -17,10 +17,6 @@ namespace SessionPersistence
         public List<SessionValue> Store = new List<SessionValue>();
     }
 
-    public interface ISessionStore
-    {
-    }
-
     //public static void SetValue<T>(T value, Guid id)
     //{
     //    var valueFound = Store.FirstOrDefault(s => s.Id == id);
