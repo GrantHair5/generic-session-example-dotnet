@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionPersistence", "Sessi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionInteractor.Domain", "SessionInteractor.Domain\SessionInteractor.Domain.csproj", "{5A9228E4-BB23-4E35-AE51-C60F3D5FB255}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionInteractor.Adapters", "SessionInteractor.Adapters\SessionInteractor.Adapters.csproj", "{958900BA-CE8F-498C-B3B2-6B0E87F16353}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5A9228E4-BB23-4E35-AE51-C60F3D5FB255}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A9228E4-BB23-4E35-AE51-C60F3D5FB255}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A9228E4-BB23-4E35-AE51-C60F3D5FB255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{958900BA-CE8F-498C-B3B2-6B0E87F16353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958900BA-CE8F-498C-B3B2-6B0E87F16353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958900BA-CE8F-498C-B3B2-6B0E87F16353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958900BA-CE8F-498C-B3B2-6B0E87F16353}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

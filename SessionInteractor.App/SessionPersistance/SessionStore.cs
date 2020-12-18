@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using Newtonsoft.Json;
 
 namespace SessionPersistence
 {
@@ -14,39 +12,38 @@ namespace SessionPersistence
         public string TypeOfValue { get; set; }
     }
 
-    public static class SessionStore
+    public class SessionStore : ISessionStore
     {
-        public static List<SessionValue> Store = new List<SessionValue>();
-
-        public static void SetValue<T>(T value, Guid id)
-        {
-            var valueFound = Store.FirstOrDefault(s => s.Id == id);
-            if (valueFound == null)
-            {
-                Store.Add(new SessionValue
-                {
-                    Id = id,
-                    Value = JsonConvert.SerializeObject(value),
-                    TypeOfValue = value.GetType().Name
-                });
-            }
-            else
-            {
-                valueFound.Value = JsonConvert.SerializeObject(value);
-            }
-
-            PrintSessionToConsole();
-        }
-
-        public static T GetValue<T>(Guid id)
-        {
-            var valueFound = Store.FirstOrDefault(s => s.Id == id);
-            return valueFound != null ? JsonConvert.DeserializeObject<T>(valueFound.Value) : default;
-        }
-
-        public static void PrintSessionToConsole()
-        {
-            Console.WriteLine(JsonConvert.SerializeObject(Store, Formatting.Indented));
-        }
+        public List<SessionValue> Store = new List<SessionValue>();
     }
+
+    public interface ISessionStore
+    {
+    }
+
+    //public static void SetValue<T>(T value, Guid id)
+    //{
+    //    var valueFound = Store.FirstOrDefault(s => s.Id == id);
+    //    if (valueFound == null)
+    //    {
+    //        Store.Add(new SessionValue
+    //        {
+    //            Id = id,
+    //            Value = JsonConvert.SerializeObject(value),
+    //            TypeOfValue = value.GetType().Name
+    //        });
+    //    }
+    //    else
+    //    {
+    //        valueFound.Value = JsonConvert.SerializeObject(value);
+    //    }
+
+    //    PrintSessionToConsole();
+    //}
+
+    //public static T GetValue<T>(Guid id)
+    //{
+    //    var valueFound = Store.FirstOrDefault(s => s.Id == id);
+    //    return valueFound != null ? JsonConvert.DeserializeObject<T>(valueFound.Value) : default;
+    //}
 }
