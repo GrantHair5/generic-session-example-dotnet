@@ -2,6 +2,7 @@
 using System.Linq;
 using Newtonsoft.Json;
 using SessionPersistence;
+using SessionPersistence.Implementation;
 
 namespace SessionInteractor.Adapters.Input.Implementation
 {

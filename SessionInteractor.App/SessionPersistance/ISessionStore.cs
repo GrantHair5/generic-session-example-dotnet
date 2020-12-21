@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using SessionPersistence.Implementation;
 
 namespace SessionPersistence
 {

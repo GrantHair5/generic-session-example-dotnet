@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SessionPersistence
+namespace SessionPersistence.Implementation
 {
     public class SessionValue
     {
@@ -14,6 +14,6 @@ namespace SessionPersistence
 
     public class SessionStore : ISessionStore
     {
-        public List<SessionValue> Store { get; set; }
+        public List<SessionValue> Store { get; set; } = new List<SessionValue>();
     }
 }
