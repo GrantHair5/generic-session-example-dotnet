@@ -5,8 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Input\Implementation\" />
     <Folder Include="Output\Implementation\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SessionPersistance\SessionPersistence.csproj" />
   </ItemGroup>
 
 </Project>

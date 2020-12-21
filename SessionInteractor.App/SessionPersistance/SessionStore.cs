@@ -14,32 +14,6 @@ namespace SessionPersistence
 
     public class SessionStore : ISessionStore
     {
-        public List<SessionValue> Store = new List<SessionValue>();
+        public List<SessionValue> Store { get; set; }
     }
-
-    //public static void SetValue<T>(T value, Guid id)
-    //{
-    //    var valueFound = Store.FirstOrDefault(s => s.Id == id);
-    //    if (valueFound == null)
-    //    {
-    //        Store.Add(new SessionValue
-    //        {
-    //            Id = id,
-    //            Value = JsonConvert.SerializeObject(value),
-    //            TypeOfValue = value.GetType().Name
-    //        });
-    //    }
-    //    else
-    //    {
-    //        valueFound.Value = JsonConvert.SerializeObject(value);
-    //    }
-
-    //    PrintSessionToConsole();
-    //}
-
-    //public static T GetValue<T>(Guid id)
-    //{
-    //    var valueFound = Store.FirstOrDefault(s => s.Id == id);
-    //    return valueFound != null ? JsonConvert.DeserializeObject<T>(valueFound.Value) : default;
-    //}
 }
