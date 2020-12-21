@@ -31,6 +31,8 @@ namespace SessionInteractor.Adapters.Input.Implementation
             {
                 valueFound.Value = JsonConvert.SerializeObject(value);
             }
+
+            Console.WriteLine(JsonConvert.SerializeObject(_store.Store));
         }
     }
 }
