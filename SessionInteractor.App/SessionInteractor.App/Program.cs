@@ -21,7 +21,8 @@ namespace SessionInteractor.App
                 .BuildServiceProvider();
 
             var vehicleOneId = Guid.NewGuid();
-            //do the actual work here
+            var vehicleTwoId = Guid.NewGuid();
+
             var sessionPersister = serviceProvider.GetService<ISessionPersister>();
             var sessionRetriever = serviceProvider.GetService<ISessionRetriever>();
 
@@ -31,9 +32,17 @@ namespace SessionInteractor.App
                 Registration = "A1"
             }, vehicleOneId);
 
+            sessionPersister.SetValue(new Vehicle
+            {
+                MakeModel = "Mazda Miata",
+                Registration = "A2"
+            }, vehicleTwoId);
+
             var vehicleOne = sessionRetriever.GetValue<Vehicle>(vehicleOneId);
+            var vehicleTwo = sessionRetriever.GetValue<Vehicle>(vehicleTwoId);
 
             Console.WriteLine(JsonConvert.SerializeObject(vehicleOne));
+            Console.WriteLine(JsonConvert.SerializeObject(vehicleTwo));
         }
     }
 }
