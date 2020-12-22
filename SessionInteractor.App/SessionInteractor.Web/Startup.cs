@@ -12,6 +12,7 @@ using SessionInteractor.Adapters.Input;
 using SessionInteractor.Adapters.Input.Implementation;
 using SessionInteractor.Adapters.Output;
 using SessionInteractor.Adapters.Output.Implementation;
+using SessionInteractor.Middleware;
 using SessionPersistence;
 using SessionPersistence.Implementation;
 
@@ -50,6 +51,8 @@ namespace SessionInteractor.Web
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseMiddleware<SessionRetrievalMiddleware>();
 
             app.UseRouting();
 

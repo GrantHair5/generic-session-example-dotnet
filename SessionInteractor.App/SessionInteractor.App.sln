@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SessionInteractor.Exception
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionInteractor.Web", "SessionInteractor.Web\SessionInteractor.Web.csproj", "{8CAD5197-E724-41BE-822C-44201798FA9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionInteractor.Middleware", "SessionInteractor.Middleware\SessionInteractor.Middleware.csproj", "{853B06A7-5249-492B-93CF-565D46C677DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{8CAD5197-E724-41BE-822C-44201798FA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CAD5197-E724-41BE-822C-44201798FA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CAD5197-E724-41BE-822C-44201798FA9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853B06A7-5249-492B-93CF-565D46C677DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853B06A7-5249-492B-93CF-565D46C677DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853B06A7-5249-492B-93CF-565D46C677DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853B06A7-5249-492B-93CF-565D46C677DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

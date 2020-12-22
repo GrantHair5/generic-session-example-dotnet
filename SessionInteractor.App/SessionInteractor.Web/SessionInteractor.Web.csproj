@@ -8,6 +8,7 @@
     <ProjectReference Include="..\SessionInteractor.Adapters\SessionInteractor.Adapters.csproj" />
     <ProjectReference Include="..\SessionInteractor.Domain\SessionInteractor.Domain.csproj" />
     <ProjectReference Include="..\SessionInteractor.Exceptions\SessionInteractor.Exceptions.csproj" />
+    <ProjectReference Include="..\SessionInteractor.Middleware\SessionInteractor.Middleware.csproj" />
     <ProjectReference Include="..\SessionPersistance\SessionPersistence.csproj" />
   </ItemGroup>
 
