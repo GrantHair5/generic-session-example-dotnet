@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Threading;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using SessionInteractor.Adapters.Input;
 using SessionInteractor.Adapters.Input.Implementation;
 using SessionInteractor.Adapters.Output;
+using SessionInteractor.Adapters.Output.Implementation;
 using SessionInteractor.Domain;
 using SessionPersistence;
 using SessionPersistence.Implementation;
@@ -31,6 +33,8 @@ namespace SessionInteractor.App
                 MakeModel = "Audi A1",
                 Registration = "A1"
             }, vehicleOneId);
+
+            Thread.Sleep(TimeSpan.FromSeconds(10));
 
             sessionPersister.SetValue(new Vehicle
             {

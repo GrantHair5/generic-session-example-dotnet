@@ -10,6 +10,7 @@ namespace SessionPersistence.Implementation
         public string Value { get; set; }
 
         public string TypeOfValue { get; set; }
+        public DateTime TimeOutDate { get; set; }
     }
 
     public class SessionStore : ISessionStore

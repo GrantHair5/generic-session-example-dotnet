@@ -24,7 +24,8 @@ namespace SessionInteractor.Adapters.Input.Implementation
                 {
                     Id = id,
                     Value = JsonConvert.SerializeObject(value),
-                    TypeOfValue = value.GetType().Name
+                    TypeOfValue = value.GetType().Name,
+                    TimeOutDate = DateTime.UtcNow.AddSeconds(5)
                 });
             }
             else
