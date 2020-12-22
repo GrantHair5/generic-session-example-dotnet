@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SessionInteractor.Domain", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SessionInteractor.Adapters", "SessionInteractor.Adapters\SessionInteractor.Adapters.csproj", "{958900BA-CE8F-498C-B3B2-6B0E87F16353}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionInteractor.Exceptions", "SessionInteractor.Exceptions\SessionInteractor.Exceptions.csproj", "{869451C7-C117-43CD-B216-6B771E817BD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SessionInteractor.Exceptions", "SessionInteractor.Exceptions\SessionInteractor.Exceptions.csproj", "{869451C7-C117-43CD-B216-6B771E817BD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionInteractor.Web", "SessionInteractor.Web\SessionInteractor.Web.csproj", "{8CAD5197-E724-41BE-822C-44201798FA9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{869451C7-C117-43CD-B216-6B771E817BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{869451C7-C117-43CD-B216-6B771E817BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{869451C7-C117-43CD-B216-6B771E817BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CAD5197-E724-41BE-822C-44201798FA9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CAD5197-E724-41BE-822C-44201798FA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CAD5197-E724-41BE-822C-44201798FA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CAD5197-E724-41BE-822C-44201798FA9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
