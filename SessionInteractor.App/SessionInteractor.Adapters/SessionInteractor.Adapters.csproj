@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SessionInteractor.Exceptions\SessionInteractor.Exceptions.csproj" />
     <ProjectReference Include="..\SessionPersistance\SessionPersistence.csproj" />
   </ItemGroup>
 

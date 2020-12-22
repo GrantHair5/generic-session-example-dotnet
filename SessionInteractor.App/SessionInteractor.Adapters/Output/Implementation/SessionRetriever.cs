@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Newtonsoft.Json;
+using SessionInteractor.Exceptions;
 using SessionPersistence;
 
 namespace SessionInteractor.Adapters.Output.Implementation
@@ -16,12 +17,13 @@ namespace SessionInteractor.Adapters.Output.Implementation
 
         public T GetValue<T>(Guid id)
         {
-            var valueFound = _store.Store.FirstOrDefault(s => s.Id == id
-                                                              && s.TimeOutDate > DateTime.UtcNow);
+            var valueFound = _store.Store
+                .FirstOrDefault(s =>
+                    s.Id == id && s.TimeOutDate > DateTime.UtcNow);
 
             if (valueFound == null)
             {
-                throw new Exception("Session has expired");
+                throw new SessionValueExpiredException("Session has expired");
             }
 
             var valueToReturn = JsonConvert.DeserializeObject<T>(valueFound.Value);
